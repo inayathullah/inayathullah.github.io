@@ -10,6 +10,13 @@
     <lastBuildDate>Sat, 27 Aug 2022 09:16:45 +0000</lastBuildDate>
     <atom:link href="https://inayathullah.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Entity Framework - Part1 (Domain Model)</title>
+      <link>https://inayathullah.github.io/posts/entity-framework-part-1/</link>
+      <pubDate>Sat, 27 Aug 2022 09:16:45 +0000</pubDate>
+      <guid>https://inayathullah.github.io/posts/entity-framework-part-1/</guid>
+      <description>Introduction Entity Framework is one of the powerful ORM from .NET tools, with various flavors like database first, code first and my favorite one is code first.</description>
+    </item>
+    <item>
       <title>Markdown Cheat Sheet</title>
       <link>https://inayathullah.github.io/posts/markdown-cheat-sheet/</link>
       <pubDate>Sat, 27 Aug 2022 09:16:45 +0000</pubDate>
