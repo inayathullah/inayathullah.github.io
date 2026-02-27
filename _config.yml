@@ -1,0 +1,28 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            inayath.dev
+tagline:          Scalable .NET & Distributed Systems
+description:      Senior .NET engineer sharing deep dives on C#, Entity Framework, microservices, event-driven architecture, Azure, and system design.
+url:              https://inayathullah.github.io
+baseurl:          /
+
+author:
+  name:           'Inayathullah'
+  url:            https://twitter.com/inayathullah
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde
+
+plugins:
+  - jekyll-seo-tag
