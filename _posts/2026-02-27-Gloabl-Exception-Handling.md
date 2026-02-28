@@ -62,7 +62,7 @@ Each middleware:
 
 - Chooses whether to pass the request to the next middleware in the pipeline.
 - Can perform work before and after the next middleware in the pipeline.
-- The order of middleware is also important ([Middleware Order](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-10.0#middleware-order)).
+- The order of middleware is also important (<a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-10.0#middleware-order" target="_blank">Middleware Order</a>)
 
 Why middleware is useful:
 
