@@ -132,3 +132,18 @@
   background: transparent;
   line-height: 1.5;
 }
+
+/* Keep long code on one line and allow horizontal scroll */
+.content .highlight,
+.content .highlight pre,
+.content .highlight code,
+.content .highlight .rouge-code pre {
+  white-space: pre;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.content .highlight {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
