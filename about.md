@@ -45,6 +45,7 @@ Over the years, I’ve:
 - Reduced compliance manual effort by **90%** through real-time automation.
 - Modernised monolithic systems into Azure-native microservices.
 - Established observability standards that significantly improved incident detection and recovery times.
+- Led Landmark Information Group’s GBP10M geospatial platform modernization.
 
 I care deeply about building systems that don’t just work — but continue to work under pressure.
 
@@ -96,4 +97,4 @@ I enjoy working at the boundary between engineering, business logic, and system 
 
 ---
 
-If you'd like to connect, discuss architecture, or exchange ideas on distributed systems — feel free to reach out.
+If you'd like to connect, discuss architecture, or exchange ideas on distributed systems — feel free to reach out inayathullah.ameerjohn@gmail.com or on [LinkedIn](https://linkedin.com/in/inayathullah).
