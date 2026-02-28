@@ -63,3 +63,72 @@
 .css .o,
 .css .o + .nt,
 .css .nt + .nt { color: #999; }
+
+/* Rouge line-number blocks */
+.content .highlight {
+  position: relative;
+  margin: 1.25rem 0;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  background: #f6f6f6;
+  overflow: hidden;
+}
+
+.content .highlight > pre.highlight {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  line-height: 0;
+}
+
+.content .highlight > pre.highlight > code {
+  display: block;
+  line-height: 0;
+}
+
+.content .highlight .rouge-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  border: 0;
+}
+
+.content .highlight .rouge-table td {
+  padding: 0;
+  border: 0;
+  vertical-align: top;
+}
+
+.content .highlight .rouge-table tbody tr:nth-child(odd) td,
+.content .highlight .rouge-table tbody tr:nth-child(odd) th {
+  background: transparent;
+}
+
+.content .highlight .rouge-gutter {
+  width: 2.8rem;
+  min-width: 2.8rem;
+  background: #f3f3f3;
+  border-right: 1px solid #6f6f6f;
+  box-shadow: inset 6px 0 0 #4b4b4b;
+  color: #9b9b9b;
+  text-align: right;
+  user-select: none;
+}
+
+.content .highlight .rouge-gutter pre {
+  margin: 0;
+  padding: 0.95rem 0.6rem 0 0.5rem;
+  border: 0;
+  background: transparent;
+  line-height: 1.5;
+}
+
+.content .highlight .rouge-code pre {
+  margin: 0;
+  padding: 0.95rem 1rem 0 1rem;
+  border: 0;
+  background: transparent;
+  line-height: 1.5;
+}

@@ -11,5 +11,55 @@
       {{ content }}
     </div>
 
+    <script>
+      (function () {
+        function closeOverlay() {
+          var overlay = document.getElementById("image-lightbox-overlay");
+          if (!overlay) return;
+          document.body.style.overflow = "";
+          overlay.remove();
+        }
+
+        document.addEventListener("click", function (event) {
+          var image = event.target.closest("img.zoomable");
+          if (!image) return;
+
+          event.preventDefault();
+
+          var overlay = document.createElement("div");
+          overlay.id = "image-lightbox-overlay";
+          overlay.style.cssText = [
+            "position:fixed",
+            "inset:0",
+            "background:rgba(0,0,0,0.82)",
+            "display:flex",
+            "align-items:center",
+            "justify-content:center",
+            "z-index:9999",
+            "cursor:zoom-out",
+            "padding:24px"
+          ].join(";");
+
+          var popupImage = document.createElement("img");
+          popupImage.src = image.currentSrc || image.src;
+          popupImage.alt = image.alt || "";
+          popupImage.style.cssText = [
+            "max-width:96vw",
+            "max-height:92vh",
+            "border-radius:8px",
+            "box-shadow:0 10px 40px rgba(0,0,0,0.4)"
+          ].join(";");
+
+          overlay.appendChild(popupImage);
+          overlay.addEventListener("click", closeOverlay);
+          document.body.appendChild(overlay);
+          document.body.style.overflow = "hidden";
+        });
+
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") closeOverlay();
+        });
+      })();
+    </script>
   </body>
 </html>

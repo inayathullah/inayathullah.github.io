@@ -14,7 +14,7 @@ baseurl:          /
 
 author:
   name:           'Inayathullah'
-  url:            https://twitter.com/inayathullah
+  url:            https://twitter.com/inayath
 
 paginate:         5
 
@@ -26,3 +26,8 @@ github:
 
 plugins:
   - jekyll-seo-tag
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true

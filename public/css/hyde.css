@@ -262,3 +262,37 @@ a.sidebar-nav-item:focus {
   color: #268bd2;
   text-decoration: none;
 }
+
+.code-header {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-family: 'JetBrains Mono', monospace;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.code-header + pre,
+.code-header + .highlighter-rouge,
+.code-header + [class*="language-"] {
+  margin-top: 0;
+}
+
+.code-header + .highlighter-rouge .highlight,
+.code-header + [class*="language-"] .highlight {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.code-header + .highlighter-rouge .rouge-gutter pre,
+.code-header + .highlighter-rouge .rouge-code pre,
+.code-header + [class*="language-"] .rouge-gutter pre,
+.code-header + [class*="language-"] .rouge-code pre {
+  padding-top: 0;
+}
+
+.content .highlight {
+  margin: 0 0 1.25rem 0;
+}
