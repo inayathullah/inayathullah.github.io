@@ -4,6 +4,9 @@ title: About
 permalink: /about/
 ---
 
+<div class="about-avatar">
+  <img src="{{ '/assets/avatar.png' | relative_url }}" alt="Inayathullah">
+</div>
 ## Hi, I'm Inayathullah
 
 I’m a Senior Software Engineer with 15+ years of experience designing and delivering scalable, resilient, cloud-native systems using .NET and Azure.
@@ -97,4 +100,4 @@ I enjoy working at the boundary between engineering, business logic, and system 
 
 ---
 
-If you'd like to connect, discuss architecture, or exchange ideas on distributed systems — feel free to reach out inayathullah.ameerjohn@gmail.com or on [LinkedIn](https://linkedin.com/in/inayathullah).
+If you'd like to connect, discuss architecture, or exchange ideas on distributed systems — feel free to reach out <a href="mailto:inayathullah.ameerjohn@gmail.com">inayathullah.ameerjohn@gmail.com</a> or on <a href="https://linkedin.com/in/inayathullah" target="_blank">LinkedIn</a>.
