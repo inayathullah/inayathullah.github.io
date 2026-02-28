@@ -6,7 +6,7 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            inayath.dev
+title:            inayathullah
 tagline:          Scalable .NET & Distributed Systems
 description:      Senior .NET engineer sharing deep dives on C#, Entity Framework, microservices, event-driven architecture, Azure, and system design.
 url:              https://inayathullah.github.io

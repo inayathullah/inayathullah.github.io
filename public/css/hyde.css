@@ -250,5 +250,15 @@ a.sidebar-nav-item:focus {
 
 
 .sidebar-about h1 {
-  font-size: 2.25rem;
+  font-size: 2rem!important;
+}
+
+.post-tags {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.post-tags a {
+  color: #268bd2;
+  text-decoration: none;
 }
