@@ -58,6 +58,7 @@ html {
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
+  transition: transform 220ms ease;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -125,11 +126,43 @@ a.sidebar-nav-item:focus {
   padding-bottom: 4rem;
 }
 
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+  border: 1px solid #c6c6c6;
+  background: #ffffff;
+  color: #2b2b2b;
+  border-radius: 0.45rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  line-height: 1;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+@media (min-width: 48em) {
+  .sidebar-toggle {
+    display: block;
+  }
+}
+
 @media (min-width: 48em) {
   .content {
     max-width: 52rem;
     margin-left: 20rem;
     margin-right: 2rem;
+  }
+
+  body.sidebar-collapsed .sidebar {
+    transform: translateX(-100%);
+  }
+
+  body.sidebar-collapsed .content {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -137,6 +170,11 @@ a.sidebar-nav-item:focus {
   .content {
     margin-left: 22rem;
     margin-right: 4rem;
+  }
+
+  body.sidebar-collapsed .content {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -156,12 +194,26 @@ a.sidebar-nav-item:focus {
     margin-left: 2rem;
     margin-right: 20rem;
   }
+
+  .layout-reverse.sidebar-collapsed .sidebar {
+    transform: translateX(100%);
+  }
+
+  .layout-reverse.sidebar-collapsed .content {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (min-width: 64em) {
   .layout-reverse .content {
     margin-left: 4rem;
     margin-right: 22rem;
+  }
+
+  .layout-reverse.sidebar-collapsed .content {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

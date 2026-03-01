@@ -76,6 +76,18 @@ blockquote,
   text-decoration: none;
 }
 
+.sidebar-toggle {
+  background: #161b22;
+  color: #c9d1d9;
+  border-color: #30363d;
+}
+
+.sidebar-toggle:hover,
+.sidebar-toggle:focus {
+  background: #21262d;
+  color: #f0f6fc;
+}
+
 hr {
   border-color: #2f3746;
 }

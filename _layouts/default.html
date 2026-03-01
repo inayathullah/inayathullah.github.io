@@ -5,11 +5,46 @@
 
   <body>
 
+    <button id="sidebar-toggle" class="sidebar-toggle" type="button" aria-label="Toggle sidebar">
+      &lt;
+    </button>
+
     {% include sidebar.html %}
 
     <div class="content container">
       {{ content }}
     </div>
+
+    <script>
+      (function () {
+        var storageKey = "sidebar-collapsed";
+        var toggle = document.getElementById("sidebar-toggle");
+        if (!toggle) return;
+
+        function setCollapsed(collapsed) {
+          document.body.classList.toggle("sidebar-collapsed", collapsed);
+          toggle.setAttribute("aria-expanded", String(!collapsed));
+          toggle.setAttribute("title", collapsed ? "Expand sidebar" : "Collapse sidebar");
+          toggle.textContent = collapsed ? ">" : "<";
+        }
+
+        var savedCollapsed = false;
+        try {
+          savedCollapsed = window.localStorage.getItem(storageKey) === "1";
+        } catch (e) {
+          savedCollapsed = false;
+        }
+        setCollapsed(savedCollapsed);
+
+        toggle.addEventListener("click", function () {
+          var collapsed = !document.body.classList.contains("sidebar-collapsed");
+          setCollapsed(collapsed);
+          try {
+            window.localStorage.setItem(storageKey, collapsed ? "1" : "0");
+          } catch (e) {}
+        });
+      })();
+    </script>
 
     <script>
       (function () {
