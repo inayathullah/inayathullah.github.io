@@ -96,31 +96,31 @@ tbody tr:nth-child(odd) th {
 }
 
 code {
-  background-color: #161b22;
-  color: #c9d1d9;
-  border-color: #30363d;
+  background-color: #011627;
+  color: #d6deeb;
+  border-color: #1d3b53;
 }
 
 pre {
-  background-color: #161b22;
-  border-color: #30363d;
-  color: #c9d1d9;
+  background-color: #011627;
+  border-color: #1d3b53;
+  color: #d6deeb;
 }
 
 .highlight {
-  background-color: #161b22;
+  background-color: #011627;
 }
 
 .content .highlight {
-  border-color: #30363d;
-  background: #161b22;
+  border-color: #1d3b53;
+  background: #011627;
 }
 
 .content .highlight .rouge-gutter {
-  background: #0d1117;
-  border-right-color: #30363d;
+  background: #0b253a;
+  border-right-color: #1d3b53;
   box-shadow: inset 6px 0 0 #484f58;
-  color: #8b949e;
+  color: #4b6479;
 }
 
 .content .highlight .rouge-table tbody tr:nth-child(odd) td,
@@ -152,7 +152,8 @@ a.pagination-item:hover {
 .highlight .cp,
 .highlight .c1,
 .highlight .cs {
-  color: #8b949e;
+  color: #637777;
+  font-style: italic;
 }
 
 .highlight .k,
@@ -162,7 +163,7 @@ a.pagination-item:hover {
 .highlight .kp,
 .highlight .kr,
 .highlight .kt {
-  color: #ff7b72;
+  color: #c792ea;
 }
 
 .highlight .s,
@@ -177,7 +178,7 @@ a.pagination-item:hover {
 .highlight .sx,
 .highlight .sr,
 .highlight .ss {
-  color: #a5d6ff;
+  color: #ecc48d;
 }
 
 .highlight .m,
@@ -186,14 +187,13 @@ a.pagination-item:hover {
 .highlight .mi,
 .highlight .mo,
 .highlight .il {
-  color: #79c0ff;
+  color: #f78c6c;
 }
 
 .highlight .na,
 .highlight .nb,
 .highlight .nc,
 .highlight .no,
-.highlight .nd,
 .highlight .ne,
 .highlight .nf,
 .highlight .nl,
@@ -204,12 +204,21 @@ a.pagination-item:hover {
 .highlight .vc,
 .highlight .vg,
 .highlight .vi {
-  color: #d2a8ff;
+  color: #82aaff;
+}
+
+.highlight .nd {
+  color: #7fdbca;
 }
 
 .highlight .o,
 .highlight .ow,
 .highlight .p,
 .highlight .w {
-  color: #c9d1d9;
+  color: #d6deeb;
+}
+
+.highlight .err {
+  color: #ff5874;
+  background: transparent;
 }
