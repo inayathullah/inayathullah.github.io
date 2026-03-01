@@ -15,6 +15,16 @@
           Home
         </a>
 
+        <a class="sidebar-nav-item{% if page.url == '/categories/' %} active{% endif %}" 
+          href="{{ '/categories/' | relative_url }}">
+          Categories
+        </a>
+
+        <a class="sidebar-nav-item{% if page.url == '/tags/' %} active{% endif %}" 
+          href="{{ '/tags/' | relative_url }}">
+          Tags
+        </a>
+
         {% for node in site.pages %}
           {% if node.layout == "page" %}
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" 
