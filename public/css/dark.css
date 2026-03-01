@@ -1,0 +1,215 @@
+/* Dark mode overrides (auto-applies via prefers-color-scheme) */
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+a {
+  color: #7cc7ff;
+}
+
+a:hover,
+a:focus {
+  color: #a7dcff;
+}
+
+.content,
+.container {
+  background: transparent;
+}
+
+.page-title,
+.post-title,
+.post-title a,
+.related-posts li a {
+  color: #f0f6fc;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  color: #f0f6fc;
+}
+
+strong,
+b,
+.content strong,
+.content b {
+  color: #f0f6fc;
+}
+
+.post-date,
+.message,
+blockquote,
+.sidebar,
+.sidebar p,
+.sidebar-about .lead {
+  color: #c8d0da;
+}
+
+.sidebar {
+  background-color: #182338;
+}
+
+.sidebar a,
+.sidebar-about h1 a {
+  color: #f5f7fb;
+}
+
+.sidebar-nav-item {
+  color: #d7deea;
+}
+
+.sidebar-nav-item.active,
+.sidebar-nav-item:hover,
+.sidebar-nav-item:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+hr {
+  border-color: #2f3746;
+}
+
+blockquote {
+  border-left-color: #2f7bbd;
+}
+
+table,
+th,
+td {
+  border-color: #2f3746;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #151b25;
+}
+
+code {
+  background-color: #161b22;
+  color: #c9d1d9;
+  border-color: #30363d;
+}
+
+pre {
+  background-color: #161b22;
+  border-color: #30363d;
+  color: #c9d1d9;
+}
+
+.highlight {
+  background-color: #161b22;
+}
+
+.content .highlight {
+  border-color: #30363d;
+  background: #161b22;
+}
+
+.content .highlight .rouge-gutter {
+  background: #0d1117;
+  border-right-color: #30363d;
+  box-shadow: inset 6px 0 0 #484f58;
+  color: #8b949e;
+}
+
+.content .highlight .rouge-table tbody tr:nth-child(odd) td,
+.content .highlight .rouge-table tbody tr:nth-child(odd) th {
+  background: transparent;
+}
+
+.code-header {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.pagination-item {
+  border-color: #2f3746;
+  color: #d5dbe5;
+}
+
+a.pagination-item:hover {
+  background-color: #1b2432;
+}
+
+.related-posts {
+  border-top-color: #2f3746;
+}
+
+/* GitHub-dark-like syntax colors */
+.highlight .c,
+.highlight .cm,
+.highlight .cp,
+.highlight .c1,
+.highlight .cs {
+  color: #8b949e;
+}
+
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt {
+  color: #ff7b72;
+}
+
+.highlight .s,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s1,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .ss {
+  color: #a5d6ff;
+}
+
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il {
+  color: #79c0ff;
+}
+
+.highlight .na,
+.highlight .nb,
+.highlight .nc,
+.highlight .no,
+.highlight .nd,
+.highlight .ne,
+.highlight .nf,
+.highlight .nl,
+.highlight .nn,
+.highlight .nt,
+.highlight .nv,
+.highlight .bp,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+  color: #d2a8ff;
+}
+
+.highlight .o,
+.highlight .ow,
+.highlight .p,
+.highlight .w {
+  color: #c9d1d9;
+}
