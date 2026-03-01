@@ -27,6 +27,9 @@ github:
 plugins:
   - jekyll-seo-tag
 
+google_analytics:
+  id: "G-QTZQ1PBK8Ts"
+
 kramdown:
   syntax_highlighter_opts:
     block:
