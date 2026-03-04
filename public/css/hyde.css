@@ -143,6 +143,44 @@ a.sidebar-nav-item:focus {
   cursor: pointer;
 }
 
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c6c6c6;
+  background: #ffffff;
+  color: #2b2b2b;
+  border-radius: 0.45rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  line-height: 1;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.theme-toggle-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-icon svg {
+  display: block;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+  background: #f3f3f3;
+}
+
 @media (min-width: 48em) {
   .sidebar-toggle {
     display: block;
