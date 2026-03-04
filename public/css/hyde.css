@@ -185,6 +185,16 @@ a.sidebar-nav-item:focus {
   text-decoration: underline;
 }
 
+@media (max-width: 47.999em) {
+  .theme-toggle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: 48em) {
   .sidebar-toggle {
     display: block;
